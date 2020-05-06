@@ -1,0 +1,21 @@
+.Header h3 {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 10px;
+}
+.Header .TopBar {
+    display: flex;
+}
+.Header .Cart {
+    display: flex;
+    width: 200px;
+    justify-content: flex-end;
+    align-items: center;    
+}
+.Header .Cart svg {
+    padding-left: 4px;   
+}
+.Header .Cart h4 {
+    margin: 0;
+    padding: 0;
+}

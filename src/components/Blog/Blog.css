@@ -1,0 +1,37 @@
+.Blog ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+.Blog .Pagination {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.Blog .Pagination li {
+    height: 35px;
+    margin: 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Blog .Pagination li button {
+    cursor: pointer;
+    width: 40px;
+}
+.Blog .Pagination li.active button {
+    background-color: #20b2aa;
+    color: white;
+}
+.Blog .blogItem {
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    0%  { margin-left: -100%; }
+  100%  { margin-left: 0; }
+}

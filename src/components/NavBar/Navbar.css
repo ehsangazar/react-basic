@@ -1,0 +1,17 @@
+.Navbar {
+    width: 100%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.Navbar li button {
+    border: none;
+    font-size: 10px;
+    color: #2c3e50;
+    cursor: pointer;
+}
+.Navbar li button:hover {
+    border: none;
+    color: #c0392b;
+}
