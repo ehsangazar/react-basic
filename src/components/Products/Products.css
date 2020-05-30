@@ -27,3 +27,27 @@
 .slideshow img {
   width: 100%;
 }
+.placeholder-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.placeholder {
+  width: 45%;
+  height: 200px;
+  margin: 10px;  
+  position: relative;
+}
+.placeholder::after {
+  content: ' ';
+  z-index: 1;
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  height: 200px;
+  width:100%;
+  top: 0;
+  left: 0;
+}
+.my-awesome-placeholder {
+  width: 200px;
+  margin: 10px;
+}

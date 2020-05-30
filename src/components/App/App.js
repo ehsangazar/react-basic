@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
 import './App.css';
-import Products from '../Products/Products';
-import About from '../About/About';
-import Contact from '../Contact/Contact';
-import Blog from '../Blog/Blog';
-import Layout from "../Layout/Layout";
-import SingleProduct from "../SingleProduct/SingleProduct";
-import PRODUCTS from "./PRODUCTS.json";
-import ThemeContext from '../../contexts/ThemeContext'
-import themeConfig from '../../configs/theme'
 import {
   BrowserRouter,
   Route,
   Switch,
 } from 'react-router-dom';
+import Products from '../Products/Products';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
+import Blog from '../Blog/Blog';
+import Layout from '../Layout/Layout';
+import SingleProduct from '../SingleProduct/SingleProduct';
+import ThemeContext from '../../contexts/ThemeContext';
+import themeConfig from '../../configs/theme';
 
 const App = () => {
-  const [activeTheme, setActiveTheme] = useState('green')
+  const [activeTheme, setActiveTheme] = useState('green');
   return (
     <ThemeContext.Provider
       value={{
@@ -29,7 +28,7 @@ const App = () => {
           <Layout>
             <Switch>
               <Route exact path="/">
-                <Products data={PRODUCTS} />
+                <Products />
               </Route>
               <Route path="/about">
                 <About />
@@ -49,6 +48,6 @@ const App = () => {
       </div>
     </ThemeContext.Provider>
   );
-}
+};
 
 export default App;
